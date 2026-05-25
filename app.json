@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "name": "SocialApp",
+    "slug": "social-app",
+    "version": "1.0.0",
+    "scheme": "socialapp",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "App ini butuh akses kamera untuk fitur foto"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "App ini butuh akses galeri untuk memilih foto"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "App ini butuh lokasi"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#ffffff"
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "App ini butuh akses kontak"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "App ini butuh akses galeri",
+          "savePhotosPermission": "App ini ingin menyimpan foto ke galeri",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.opetlewellin.socialapp",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.READ_CONTACTS",
+        "android.permission.WRITE_CONTACTS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0721aacc-45b8-4467-b328-a692bb1ab23a"
+      }
+    }
+  }
+}
